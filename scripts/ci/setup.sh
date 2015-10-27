@@ -10,6 +10,9 @@ fi
 if [ "$TRAVIS_BRANCH" == "develop" ]; then
     ARGS+="this.version += \"-alpha.$TRAVIS_BUILD_NUMBER\";"
 fi
+if [ "$TRAVIS_BRANCH" == "diy" ]; then
+    ARGS+="this.version += \"-diy.$TRAVIS_BUILD_NUMBER\";"
+fi
 
 # Install npm deps in module directories and tweak kanso gardener related
 # configs so it knows.

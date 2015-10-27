@@ -42,4 +42,8 @@ if [ "$TRAVIS_BRANCH" == "develop" ]; then
     push 'alpha'
 fi;
 
+if [ "$TRAVIS_BRANCH" == "diy" ]; then
+    push 'diy'
+fi;
+
 exit 0;
